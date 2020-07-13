@@ -11,6 +11,9 @@ provider:
     S3_IMAGES_BUCKET: ${env:S3_IMAGES_BUCKET}
     ENDPOINT_URL: ${env:ENDPOINT_URL}
     FRONTEND_URL: ${env:FRONTEND_URL}
+  apiGateway:
+    binaryMediaTypes:
+      - '*/*'
   iamRoleStatements:
     - Effect: Allow
       Action:
